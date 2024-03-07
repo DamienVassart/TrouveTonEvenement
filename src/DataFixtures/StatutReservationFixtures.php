@@ -6,6 +6,9 @@ use App\Entity\StatutReservation;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
+/**
+ * @author Damien Vassart
+ */
 class StatutReservationFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void

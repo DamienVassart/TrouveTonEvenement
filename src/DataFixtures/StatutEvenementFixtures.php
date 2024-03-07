@@ -6,6 +6,9 @@ use App\Entity\StatutEvenement;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
+/**
+ * @author Damien Vassart
+ */
 class StatutEvenementFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void

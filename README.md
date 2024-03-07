@@ -15,7 +15,7 @@ An event publishing and booking web platform. This is a personal project intende
 
 ## Branches & Workflow ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DamienVassart/TrouveTonEvenement)
 You will find the specifications, the UML Diagrams and the final mockups [in this repository](https://github.com/DamienVassart/tte-preprod).\
-This project will be conducted using **GitFlow** methodology. Therefore, there always be at least 2 other branches:
+This project will be conducted using **GitFlow** methodology. Therefore, there will always be at least 2 other branches:
 - `main`, which will host the production code
 - `develop`, which will host the code with the features just finished and ready to be reviewed prior to release and production.
 
