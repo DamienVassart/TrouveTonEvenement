@@ -4,7 +4,7 @@ init:
 	touch .env.local ; \
 	composer install ; \
 	php bin/console app:secret:generate ; \
-	php bin/console app:define:database mysql root tte 5.7 ; \
+	php bin/console app:database:define mysql root tte 5.7 ; \
 	php bin/console doctrine:database:create ; \
 	php bin/console doctrine:migrations:migrate ; \
 	php bin/console doctrine:fixtures:load ;
