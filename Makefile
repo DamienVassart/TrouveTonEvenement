@@ -1,5 +1,15 @@
 SHELL := /bin/zsh
 
+init:
+	touch .env.local ; \
+	composer install ; \
+	php bin/console app:secret:generate ; \
+	php bin/console app:define:database mysql root tte 5.7 ; \
+	php bin/console doctrine:database:create ; \
+	php bin/console doctrine:migrations:migrate ; \
+	php bin/console doctrine:fixtures:load ;
+.PHONY: init
+
 localites:
 	mkdir -p "imports" ; \
 	if ! [ -f imports/localites.csv ] && curl --head --silent --fail https://www.data.gouv.fr/fr/datasets/r/51606633-fb13-4820-b795-9a2a575a72f1 2> /dev/null ; then \

@@ -40,7 +40,36 @@ The design is based on [HTML Codex JobEntry theme](https://htmlcodex.com/job-por
 An up to date roadmap of the project can be seen [here](https://view.monday.com/1360435266-fc2bcf8205a4fba9938ea7d39d15d930?r=euc1)
 
 ## Installation Instructions
-TODO
+The installation process is valid for **UNIX** based systems. For **Windows**, it may depend on your configuration.\
+
+`git clone`\
+`cd TrouveTonEvenement`\
+\
+You may choose either an automatic or a manual installation.
+
+### A. Automatic Installation
+Run `make init`
+
+This option will set **DATABASE_URL** in **.env.local** to **mysql://root@127.0.0.1:3306/tte?serverVersion=5.7**
+
+### B. Manual Installation
+1. `touch .env.local`
+2. `composer install`
+3. `php bin/console app:secret:generate`
+4. `php bin/console app:define:database`
+   - You will have to pass the following arguments:
+     - database [sqlite, mysql, postgresql] - **!Required**
+     - db_username - **!Required**
+     - db_name (the name of the database) - **!Required**
+     - server_version - **!Required**
+     - [db_password] - *?optional*
+     - [host] - *?optional* - default value:  127.0.0.1
+     - [port] - *?optional* - default value: 3306
+5. `php bin/console doctrine:database:create`
+6. `php bin/console doctrine:migrations:migrate`
+7. `php bin/console doctrine:fixtures:load`
+
+*To be continued*
 
 ## License
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) This project is under **GPLv3 License**
