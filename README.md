@@ -56,7 +56,7 @@ This option will set **DATABASE_URL** in **.env.local** to **mysql://root@127.0.
 1. `touch .env.local`
 2. `composer install`
 3. `php bin/console app:secret:generate`
-4. `php bin/console app:define:database`
+4. `php bin/console app:database:define`
    - You will have to pass the following arguments:
      - database [sqlite, mysql, postgresql] - **!Required**
      - db_username - **!Required**
