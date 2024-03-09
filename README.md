@@ -40,7 +40,8 @@ The design is based on [HTML Codex JobEntry theme](https://htmlcodex.com/job-por
 An up to date roadmap of the project can be seen [here](https://view.monday.com/1360435266-fc2bcf8205a4fba9938ea7d39d15d930?r=euc1)
 
 ## Installation Instructions
-The installation process is valid for **UNIX** based systems. For **Windows**, it may depend on your configuration.\
+The installation process is valid for **UNIX** based systems. For **Windows**, it may depend on your configuration.
+Your database server must be up and running.
 
 `git clone`\
 `cd TrouveTonEvenement`\
