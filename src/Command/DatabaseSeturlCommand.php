@@ -10,6 +10,9 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
+/**
+ * @author Damien Vassart
+ */
 #[AsCommand(
     name: 'app:database:seturl',
     description: 'Will set DATABASE_URL in .env.local',
@@ -73,7 +76,7 @@ class DatabaseSeturlCommand extends Command
 
         $serverVersion = $io->ask('Server version: ', null, function (string $serverVersion): string {
             if (empty($serverVersion)) {
-                throw new \RuntimeException('Server version must ne specified');
+                throw new \RuntimeException('Server version must be specified');
             }
 
             return $serverVersion;
