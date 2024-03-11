@@ -51,21 +51,19 @@ You may choose either an automatic or a manual installation.
 ### A. Automatic Installation
 Run `make init`
 
-This option will set **DATABASE_URL** in **.env.local** to **mysql://root@127.0.0.1:3306/tte?serverVersion=5.7**
-
 ### B. Manual Installation
 1. `touch .env.local`
 2. `composer install`
 3. `php bin/console app:secret:generate`
-4. `php bin/console app:database:define`
-   - You will have to pass the following arguments:
-     - database [sqlite, mysql, postgresql] - **!Required**
-     - db_username - **!Required**
-     - db_name (the name of the database) - **!Required**
-     - server_version - **!Required**
-     - [db_password] - *?optional*
-     - [host] - *?optional* - default value:  127.0.0.1
-     - [port] - *?optional* - default value: 3306
+4. `php bin/console app:database:seturl`
+   - You will be prompted the following data:
+     - Database type (sqlite, mysql, postgresql) **!required**
+     - Database username **!required**
+     - User password *?optional*
+     - Host **!required** | default: 127.0.0.1
+     - Port number **!required** | default: 3306
+     - Database name **!required**
+     - Server version **!required**
 5. `php bin/console doctrine:database:create`
 6. `php bin/console doctrine:migrations:migrate`
 7. `php bin/console doctrine:fixtures:load`
