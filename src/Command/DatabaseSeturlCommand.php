@@ -10,14 +10,11 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-/**
- * @author Damien Vassart
- */
 #[AsCommand(
     name: 'app:database:seturl',
     description: 'Will set DATABASE_URL in .env.local',
 )]
-class DatabaseDefineCommand extends Command
+class DatabaseSeturlCommand extends Command
 {
     public function __construct()
     {
