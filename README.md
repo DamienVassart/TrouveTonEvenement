@@ -6,7 +6,11 @@
   - [UI Theme](#ui-theme)
   - [Tech Stack](#tech-stack)
   - [Roadmap](#roadmap)
+  - [Requirements](#requirements)
   - [Installation Instructions](#installation-instructions)
+    - [Automatic Installation](#a-automatic-installation)
+    - [Manual Installation](#b-manual-installation)
+    - [Import Geographical Data](#c-import-geographical-data)
   - [License](#license)
 
 
@@ -39,6 +43,12 @@ The design is based on [HTML Codex JobEntry theme](https://htmlcodex.com/job-por
 ## Roadmap
 An up to date roadmap of the project can be seen [here](https://view.monday.com/1360435266-fc2bcf8205a4fba9938ea7d39d15d930?r=euc1)
 
+## Requirements
+- PHP 8.1+
+- A database server (SQLite, MySQL, PostgreSQL)
+- The Make command installed on your machine
+- 10GB of free disk space
+
 ## Installation Instructions
 The installation process is valid for **UNIX** based systems. For **Windows**, it may depend on your configuration.
 Your database server must be up and running.
@@ -49,14 +59,14 @@ Your database server must be up and running.
 You may choose either an automatic or a manual installation.
 
 ### A. Automatic Installation
-Run `make init`
+`~ make init`
 
 ### B. Manual Installation
-1. `touch .env.local`
-2. `composer install`
-3. `php bin/console app:secret:generate`
-4. `php bin/console app:database:seturl`
-   - You will be prompted the following data:
+1. `~ touch .env.local`
+2. `~ composer install`
+3. `~ php bin/console app:secret:generate`
+4. `~ php bin/console app:database:seturl`
+   - You will be prompted for the following data:
      - Database type (sqlite, mysql, postgresql) **!required**
      - Database username **!required**
      - User password *?optional*
@@ -64,11 +74,20 @@ Run `make init`
      - Port number **!required** | default: 3306
      - Database name **!required**
      - Server version **!required**
-5. `php bin/console doctrine:database:create`
-6. `php bin/console doctrine:migrations:migrate`
-7. `php bin/console doctrine:fixtures:load`
+5. `~ php bin/console doctrine:database:create`
+6. `~ php bin/console doctrine:migrations:migrate`
+7. `~ php bin/console doctrine:fixtures:load`
 
-*To be continued*
+### C. Import Geographical Data
+1. `~ make localites`
+2. `~ make adresses` <sup>1</sup>
+3. `~ php bin/console app:import:localites`
+4. `~ php bin/console app:import:adresses` <sup>2</sup>
+
+<sup>1</sup> : Compressed data takes about 750MB, uncompressed data takes about 5GB\
+<sup>2</sup> : ⚠️ This command will import all the adresses contained in the *adresses-xxx.csv* files. There are about 26+ millions adresses, so the process can be very long. You can interrupt it by hitting `CTRL+C` and resume later.
+
+*The above instructions will be updated as the project progresses. Remember to check it regularly.*
 
 ## License
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) This project is under **GPLv3 License**
