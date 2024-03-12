@@ -2,6 +2,7 @@
 
 namespace App\Command;
 
+use http\Encoding\Stream\Inflate;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -10,12 +11,9 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-/**
- * @author Damien Vassart
- */
 #[AsCommand(
     name: 'app:database:seturl',
-    description: 'Will set DATABASE_URL in .env.local',
+    description: 'Set the database URL and puts it into .env.local',
 )]
 class DatabaseSeturlCommand extends Command
 {
@@ -32,13 +30,13 @@ class DatabaseSeturlCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $io->title('Set database URL');
+        $io->title("Set database URL");
 
         $dotEnvFile = ".env.local";
         $content = file_get_contents($dotEnvFile);
 
         // database, username, password, host, port, dbName, serverVersion
-        $database = $io->ask('Which database do you want to use ? [sqlite, mysql, postgresql]', 'mysql', function(string $database): string {
+        $database = $io->ask('Which database do you want to use ? [sqlite, mysql, postgresql]', 'mysql', function (string $database): string {
             return $database;
         });
 
@@ -50,29 +48,29 @@ class DatabaseSeturlCommand extends Command
             return $username;
         });
 
-        $password = $io->askHidden('Password for that user (can be empty): ', function (string $password): string {
+        $password = $io->askHidden('Password for that user (can be empty): ', function (?string $password): string {
             if (empty($password)) {
                 return '';
             }
 
             return ':' . $password;
-        } );
+        });
 
-        $host = $io->ask('Database host: ', '127.0.0.1', function(string $host): string {
+        $host = $io->ask('Database host: ', '127.0.0.1', function (string $host): string {
             return $host;
         });
 
         $port = $io->ask('Database port: ', '3306', function (string $port): string {
-            return  $port;
+            return $port;
         });
 
-        $dbName = $io->ask('Database name: ', null, function (string $dbName): string {
+        $dbName = $io->ask('Database name: ', null, function(string $dbName): string {
             if (empty($dbName)) {
                 throw new \RuntimeException('Database name cannot be empty');
             }
 
             return $dbName;
-        });
+    });
 
         $serverVersion = $io->ask('Server version: ', null, function (string $serverVersion): string {
             if (empty($serverVersion)) {
