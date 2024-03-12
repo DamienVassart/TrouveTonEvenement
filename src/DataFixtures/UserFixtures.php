@@ -27,6 +27,8 @@ class UserFixtures extends Fixture
 
         $user->setEmail('mail@example.com');
 
+        $user->setRoles(['ROLE_USER']);
+
         $password = $this->hasher->hashPassword($user, 'password');
         $user->setPassword($password);
 
@@ -46,6 +48,8 @@ class UserFixtures extends Fixture
             $user = new User();
 
             $user->setEmail($faker->email);
+
+            $user->setRoles(['ROLE_USER']);
 
             $password = $this->hasher->hashPassword($user, 'password');
             $user->setPassword($password);
