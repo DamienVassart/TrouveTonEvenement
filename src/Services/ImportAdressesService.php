@@ -68,6 +68,7 @@ class ImportAdressesService
             $fileName = $file->getFilename();
 
             if ($file->getSize() === 0) {
+                $filesystem->remove("imports/adresses/" . $fileName);
                 continue;
             }
 
@@ -116,14 +117,15 @@ class ImportAdressesService
             // End progress bar
             $io->progressFinish();
 
+            // Reset of import_progress table
+            $io->text("Reinitialisation de la table import_progress\n");
+            $this->importProgressRepository->resetTable();
+            $io->text("Table import_progress reinitialisee\n");
+
             // Moving the file to "done" directory
             $io->text("Deplacement du fichier " . $fileName . "\n");
             $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/done/" . $fileName);
-
-            // Reset of import_progress table
-            $io->text("Réinitialisation de la table import_progress\n");
-            $this->importProgressRepository->resetTable();
-            $io->text("Table import_progress réinitialisée, poursuite du traitement\n");
+            $io->text("Poursuite du traitement\n");
         }
         // Process the files END
 
