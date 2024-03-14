@@ -109,12 +109,12 @@ class ImportAdressesService
             $this->em->flush();
             $this->em->clear();
 
+            $this->importProgressRepository->resetTable();
+
             // End progress bar
             $io->progressFinish();
         }
         // Process the files END
-
-        $this->importProgressRepository->resetTable();
 
         $io->success('Importation des adresses terminee');
     }
