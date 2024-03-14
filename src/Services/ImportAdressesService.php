@@ -30,6 +30,8 @@ class ImportAdressesService
 
     public function importAdresses(SymfonyStyle $io, bool $resetAndImport, bool $reset)
     {
+        gc_enable();
+
         $io->title('Importation des adresses');
 
         $this->em->getConnection()->getConfiguration()->setMiddlewares([new Middleware(new NullLogger())]);
@@ -126,6 +128,11 @@ class ImportAdressesService
             $io->text("Deplacement du fichier " . $fileName . "\n");
             $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/done/" . $fileName);
             $io->text("Poursuite du traitement\n");
+
+            // Free memory
+            $adresses = null;
+            $file = null;
+            gc_collect_cycles();
         }
         // Process the files END
 

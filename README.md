@@ -82,7 +82,7 @@ You may choose either an automatic or a manual installation.
 1. `~ make localites`
 2. `~ make adresses` <sup>1</sup>
 3. `~ php bin/console app:import:localites`
-4. `~ php bin/console app:import:adresses` <sup>2</sup>
+4. `~ php bin/console app:import:adresses --no-debug` <sup>2</sup>
 
 <sup>1</sup> : Compressed data takes about 750MB, uncompressed data takes about 5GB\
 <sup>2</sup> : ⚠️ This command will import all the adresses contained in the *adresses-xxx.csv* files. There are about 26+ millions adresses, so the process can be very long. You can interrupt it by hitting `CTRL+C` and resume later.
