@@ -119,11 +119,6 @@ class ImportAdressesService
             // End progress bar
             $io->progressFinish();
 
-            // Reset of import_progress table
-            $io->text("Reinitialisation de la table import_progress\n");
-            $this->importProgressRepository->resetTable();
-            $io->text("Table import_progress reinitialisee\n");
-
             // Moving the file to "done" directory
             $io->text("Deplacement du fichier " . $fileName . "\n");
             $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/done/" . $fileName);
@@ -135,6 +130,11 @@ class ImportAdressesService
             gc_collect_cycles();
         }
         // Process the files END
+
+        // Reset of import_progress table
+        $io->text("Reinitialisation de la table import_progress\n");
+        $this->importProgressRepository->resetTable();
+        $io->text("Table import_progress reinitialisee\n");
 
         $io->success('Importation des adresses terminee');
     }
