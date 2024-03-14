@@ -8,6 +8,7 @@ use App\Repository\AdresseRepository;
 use App\Repository\ImportProgressRepository;
 use Doctrine\DBAL\Logging\Middleware;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Psr\Log\NullLogger;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -32,6 +33,9 @@ class ImportAdressesService
         $io->title('Importation des adresses');
 
         $this->em->getConnection()->getConfiguration()->setMiddlewares([new Middleware(new NullLogger())]);
+
+        $filesystem = new Filesystem();
+        $filesystem->mkdir("imports/adresses/done");
 
         $importProgressRepository = $this->importProgressRepository;
 
@@ -109,10 +113,17 @@ class ImportAdressesService
             $this->em->flush();
             $this->em->clear();
 
-            $this->importProgressRepository->resetTable();
-
             // End progress bar
             $io->progressFinish();
+
+            // Moving the file to "done" directory
+            $io->text("Deplacement du fichier " . $fileName . "\n");
+            $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/done/" . $fileName);
+
+            // Reset of import_progress table
+            $io->text("Réinitialisation de la table import_progress\n");
+            $this->importProgressRepository->resetTable();
+            $io->text("Table import_progress réinitialisée, poursuite du traitement\n");
         }
         // Process the files END
 
