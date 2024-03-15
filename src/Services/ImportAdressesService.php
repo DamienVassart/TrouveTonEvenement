@@ -8,6 +8,9 @@ use App\Repository\AdresseRepository;
 use App\Repository\ImportProgressRepository;
 use Doctrine\DBAL\Logging\Middleware;
 use Doctrine\ORM\EntityManagerInterface;
+use League\Csv\Exception;
+use League\Csv\InvalidArgument;
+use League\Csv\UnavailableStream;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Psr\Log\NullLogger;
@@ -28,35 +31,48 @@ class ImportAdressesService
     {
     }
 
+    /**
+     * @param SymfonyStyle $io
+     * @param bool $resetAndImport
+     * @param bool $reset
+     * @return void
+     * @throws \Doctrine\DBAL\Exception
+     * @throws Exception
+     * @throws InvalidArgument
+     * @throws UnavailableStream
+     */
     public function importAdresses(SymfonyStyle $io, bool $resetAndImport, bool $reset)
     {
+        // Garbage collector
         gc_enable();
 
-        $io->title('Importation des adresses');
+        $io->title('Importing Addresses');
 
+        // Disable SQL logging
         $this->em->getConnection()->getConfiguration()->setMiddlewares([new Middleware(new NullLogger())]);
 
         $filesystem = new Filesystem();
-        $filesystem->mkdir("imports/adresses/done");
+        $filesystem->mkdir("imports/adresses/processed");
 
+        $adresseRepository = $this->adresseRepository;
         $importProgressRepository = $this->importProgressRepository;
 
         if ($resetAndImport) {
-            $io->info('Reinitialisation des tables adresse et import_progress; cela peut prendre un certain temps');
+            $io->info('Resetting `adresse` et `import_progress` tables; this may take a while');
 
-            $this->adresseRepository->resetTable();
-            $this->importProgressRepository->resetTable();
+            $adresseRepository->resetTable();
+            $importProgressRepository->resetTable();
 
-            $io->info('Tables reinitialisees, demarrage de l\'importation');
+            $io->info('Tables reset, starting import');
         }
 
         if ($reset) {
-            $io->info('Reinitialisation des tables adresse et import_progress; cela peut prendre un certain temps');
+            $io->info('Resetting `adresse` et `import_progress` tables; this may take a while');
 
-            $this->adresseRepository->resetTable();
-            $this->importProgressRepository->resetTable();
+            $adresseRepository->resetTable();
+            $importProgressRepository->resetTable();
 
-            $io->info('Tables reinitialisees');
+            $io->info('Tables reset');
             die();
         }
 
@@ -77,7 +93,7 @@ class ImportAdressesService
             $reader = new ReadCsvService();
             $adresses = $reader->readCsvFile("../", $f, ";");
 
-            $io->text("Traitement de " . $fileName);
+            $io->text("Processing " . $fileName);
 
             // Initialize progress bar
             $io->progressStart(count($adresses));
@@ -119,10 +135,10 @@ class ImportAdressesService
             // End progress bar
             $io->progressFinish();
 
-            // Moving the file to "done" directory
-            $io->text("Deplacement du fichier " . $fileName . "\n");
-            $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/done/" . $fileName);
-            $io->text("Poursuite du traitement\n");
+            // Moving the file to "processed" directory
+            $io->text("Moving file " . $fileName . "\n");
+            $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/processed/" . $fileName);
+            $io->text("Going ahead with processing\n");
 
             // Free memory
             $adresses = null;
@@ -132,11 +148,11 @@ class ImportAdressesService
         // Process the files END
 
         // Reset of import_progress table
-        $io->text("Reinitialisation de la table import_progress\n");
-        $this->importProgressRepository->resetTable();
-        $io->text("Table import_progress reinitialisee\n");
+        $io->text("Resetting `import_progress` table\n");
+        $importProgressRepository->resetTable();
+        $io->text("Table reset\n");
 
-        $io->success('Importation des adresses terminee');
+        $io->success('Addresses imported successfully');
     }
 
     /**

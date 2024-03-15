@@ -47,7 +47,7 @@ An up to date roadmap of the project can be seen [here](https://view.monday.com/
 - PHP 8.1+
 - A database server (SQLite, MySQL, PostgreSQL)
 - The Make command installed on your machine
-- 10GB of free disk space
+- 20GB of free disk space
 
 ## Installation Instructions
 The installation process is valid for **UNIX** based systems. For **Windows**, it may depend on your configuration.
@@ -80,12 +80,16 @@ You may choose either an automatic or a manual installation.
 
 ### C. Import Geographical Data
 1. `~ make localites`
-2. `~ make adresses` <sup>1</sup>
+2. `~ make adresses` <sup>(1)</sup>
 3. `~ php bin/console app:import:localites`
-4. `~ php bin/console app:import:adresses --no-debug` <sup>2</sup>
+4. `~ php bin/console app:import:adresses [--no-debug] [--reset] [--reset-import]` <sup>(2) (3) (4) (5)</sup>
 
-<sup>1</sup> : Compressed data takes about 750MB, uncompressed data takes about 5GB\
-<sup>2</sup> : ⚠️ This command will import all the adresses contained in the *adresses-xxx.csv* files. There are about 26+ millions adresses, so the process can be very long. You can interrupt it by hitting `CTRL+C` and resume later.
+<sup>(1)</sup> : Compressed data takes about 750MB, uncompressed data takes about 5GB\
+<sup>(2)</sup> : ⚠️ This command will import all the adresses contained in the *adresses-xxx.csv* files. There are about 26+ millions adresses, so the process can be very long. You can interrupt it by hitting `CTRL+C` and resume later.\
+<sup>(3) (4) (5)</sup> : Options 
+- Using `--no-debug` is strongly recommended to save memory and speed up the import process.
+- `--reset` will reset *adresse* and *import_progress* tables (= TRUNCATE).
+- `--reset-import` will reset *adresse* and *import_progress* tables (= TRUNCATE) and import data again (check that all the files are in the *adresses* directory).
 
 *The above instructions will be updated as the project progresses. Remember to check it regularly.*
 
