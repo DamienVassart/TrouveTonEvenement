@@ -135,6 +135,11 @@ class ImportAdressesService
             // End progress bar
             $io->progressFinish();
 
+            // Reset of import_progress table
+            $io->text("Resetting `import_progress` table\n");
+            $importProgressRepository->resetTable();
+            $io->text("Table reset\n");
+
             // Moving the file to "processed" directory
             $io->text("Moving file " . $fileName . "\n");
             $filesystem->rename("imports/adresses/" . $fileName, "imports/adresses/processed/" . $fileName);
