@@ -29,7 +29,7 @@ class ImportLocalitesService
      */
     public function importLocalites(SymfonyStyle $io)
     {
-        $io->title('Importation des localites');
+        $io->title('Importing Cities');
 
         $reader = new ReadCsvService();
 
@@ -58,6 +58,6 @@ class ImportLocalitesService
 
         $io->progressFinish();
 
-        $io->success('Importation des localites terminee');
+        $io->success('Cities imported successfully');
     }
 }
