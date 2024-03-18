@@ -18,9 +18,10 @@ class CategorieEvenement
     #[ORM\Column(length: 50)]
     private ?string $libelle = null;
 
-    #[ORM\Column(nullable: true)]
-    #[ORM\ManyToOne(targetEntity: self::class, inversedBy: "children")]
-    private ?int $parent = null;
+
+    #[ORM\ManyToOne(targetEntity: self::class)]
+    #[ORM\JoinColumn(referencedColumnName: "id")]
+    private $parent = null;
 
     #[ORM\OneToMany(targetEntity: self::class, mappedBy: 'parent')]
     private Collection $children;
@@ -51,7 +52,7 @@ class CategorieEvenement
         return $this;
     }
 
-    public function getParent(): ?int
+    public function getParent(): ?self
     {
         return $this->parent;
     }

@@ -1,0 +1,475 @@
+libelle,parent
+Atelier,
+Atelier Artistique,Atelier
+Atelier Dessin,Atelier Artistique
+Atelier Artistique Divers,Atelier Artistique
+Atelier d'Ecriture,Atelier Artistique
+Atelier de Peinture,Atelier Artistique
+Atelier de Photographie,Atelier Artistique
+Atelier de Poterie,Atelier Artistique
+Atelier de Sculpture,Atelier Artistique
+Atelier de Théâtre,Atelier Artistique
+Atelier Bien-Etre,Atelier
+Atelier Bien-Etre Divers,Atelier Bien-Etre
+Atelier de Méditation,Atelier Bien-Etre
+Atelier de Pleine conscience,Atelier Bien-Etre
+Atelier de Tai-Chi,Atelier Bien-Etre
+Atelier de Yoga,Atelier Bien-Etre
+Atelier Bricolage,Atelier
+Atelier Bricolage Divers,Atelier Bricolage
+Réparation d'appareils électriques,Atelier Bricolage
+Atelier Culinaire,Atelier
+Atelier de Chocolaterie & Patisserie,Atelier Culinaire
+Atelier de Cuisine du monde,Atelier Culinaire
+Atelier de Cuisine traditionnelle,Atelier Culinaire
+Atelier Cuisine végétarienne & vegan,Atelier Culinaire
+Atelier Culinaire Divers,Atelier Culinaire
+Atelier de Mixologie,Atelier Culinaire
+Atelier d'Œnologie,Atelier Culinaire
+Atelier Danse,Atelier
+Atelier de Danse Ballet,Atelier Danse
+Atelier de Danse contemporaire,Atelier Danse
+Atelier de Danse de rue,Atelier Danse
+Atelier de Danse traditionnelle,Atelier Danse
+Atelier Danse Divers,Atelier Danse
+Atelier Développement Personnel,Atelier
+Atelier de Communication,Atelier Développement Personnel
+Atelier Développement Personnel Divers,Atelier Développement Personnel
+Atelier de Gestion du temps,Atelier Développement Personnel
+Atelier de Leadership,Atelier Développement Personnel
+Atelier Divers,Atelier
+Atelier DIY,Atelier
+"Broderie, Couture, Tricot",Atelier DIY
+Decoration,Atelier DIY
+Atelier DIY Divers,Atelier DIY
+Atelier Educatif,Atelier
+Atelier Educatif Divers,Atelier Educatif
+Atelier de Langues étrangères,Atelier Educatif
+Atelier de Langues anciennes,Atelier Educatif
+Atelier de Philosophie,Atelier Educatif
+Atelier Esotérisme,Atelier
+Atelier d'Astrologie,Atelier Esotérisme
+Atelier Esotérisme Divers,Atelier Esotérisme
+Atelier de Numérologie,Atelier Esotérisme
+"Atelier Herboristerie, Horticulture & Jardinage",Atelier
+Atelier de Culture de fleurs,"Atelier Herboristerie, Horticulture & Jardinage"
+"Atelier Herboristerie, Horticulture & Jardinage Divers","Atelier Herboristerie, Horticulture & Jardinage"
+Atelier d'Herboristerie,"Atelier Herboristerie, Horticulture & Jardinage"
+Atelier de Permaculture,"Atelier Herboristerie, Horticulture & Jardinage"
+Atelier Potager,"Atelier Herboristerie, Horticulture & Jardinage"
+Atelier Informatique,Atelier
+Atelier de Bureautique,Atelier Informatique
+Atelier de Codage,Atelier Informatique
+Atelier Informatique Divers,Atelier Informatique
+Atelier de Graphisme,Atelier Informatique
+Atelier de MAO,Atelier Informatique
+Atelier de Montage Video,Atelier Informatique
+Atelier Musique,Atelier
+Atelier de Chant,Atelier Musique
+Atelier Musique Divers,Atelier Musique
+Atelier Instruments de musique,Atelier Musique
+Atelier Solfège,Atelier Musique
+Bal,
+Bal Costumé,Bal
+Bal masqué,Bal Costumé
+Bal thématique,Bal Costumé
+Bal Costumé Divers,Bal Costumé
+Bal Moderne,Bal
+Bal disco,Bal Moderne
+Bal de promotion,Bal Moderne
+Bal Moderne Divers,Bal Moderne
+Bal Traditionnel,Bal
+Bal folk,Bal Traditionnel
+Bal de valse,Bal Traditionnel
+Bal Traditionnel Divers,Bal Traditionnel
+Bal Divers,Bal
+Braderie,
+Braderie Divers,Braderie
+Brocante,
+Brocante Divers,Brocante
+Compétition & Concours,
+Compétition Académique,Compétition & Concours
+Compétition Académique Divers,Compétition Académique
+Compétition Académique d'Histoire,Compétition Académique
+Compétition d'Informatique,Compétition Académique
+Compétition de Mathématiques,Compétition Académique
+Concours de Physique,Compétition Académique
+Concours Artistique,Compétition & Concours
+Concours de Danse,Concours Artistique
+Concours Artistique Divers,Concours Artistique
+Concours de Musique,Concours Artistique
+Concours de Peinture,Concours Artistique
+Concours de Photographie,Concours Artistique
+Concours Culinaire,Compétition & Concours
+Concours de Cuisine innovante,Concours Culinaire
+Concours de Cuisine traditionnelle,Concours Culinaire
+Concours Culinaire Divers,Concours Culinaire
+Concours de Pâtisserie,Concours Culinaire
+Compétition & Concours Divers,Compétition & Concours
+Compétition Jeux Vidéo,Compétition & Concours
+Compétition Jeux Vidéo Divers,Compétition Jeux Vidéo
+Compétition eSports,Compétition Jeux Vidéo
+Tournois de combat,Compétition Jeux Vidéo
+Tournois de stratégie,Compétition Jeux Vidéo
+Compétition Sportive,Compétition & Concours
+Compétition d'Athlétisme,Compétition Sportive
+Compétition de Basketball,Compétition Sportive
+Compétition Sportive Divers,Compétition Sportive
+Compétition de Football,Compétition Sportive
+Compétition de Natation,Compétition Sportive
+Compétition de Tennis,Compétition Sportive
+Concours Technologique,Compétition & Concours
+Concours de Conception 3D,Concours Technologique
+CTF (Capture The Flag),Concours Technologique
+Concours de Développement logiciel,Concours Technologique
+Concours Technologique Divers,Concours Technologique
+Concours de Robotique,Concours Technologique
+Concert,
+Concert Divers,Concert
+Concert Expérimental,Concert
+Concert Expérimental Divers,Concert Expérimental
+Installations musicales,Concert Expérimental
+Performances sonores,Concert Expérimental
+Concert Musique Classique,Concert
+Concert de Musique de Chambre,Concert Musique Classique
+Concert Musique Classique Divers,Concert Musique Classique
+Concert d'Opera,Concert Musique Classique
+Concert Solo,Concert Musique Classique
+Concert Symphonique,Concert Musique Classique
+Concert Musique Contemporaine,Concert
+Concert Musique Contemporaine Divers,Concert Musique Contemporaine
+Concert de Hip-hop,Concert Musique Contemporaine
+Concert de Jazz,Concert Musique Contemporaine
+Concert Pop,Concert Musique Contemporaine
+Concert de Rock,Concert Musique Contemporaine
+Concert Musiques Du Monde,Concert
+Concert d'Afrobeat,Concert Musiques Du Monde
+Concert Musiques Du Monde Divers,Concert Musiques Du Monde
+Concert K-Pop,Concert Musiques Du Monde
+Concert Latino,Concert Musiques Du Monde
+Concert de Reggae,Concert Musiques Du Monde
+Concert Thématique,Concert
+Concerts de charité,Concert Thématique
+Concerts hommage,Concert Thématique
+Concert Thématique Divers,Concert Thématique
+Conférence,
+Conférence Académique,Conférence
+Conférence Académique Divers,Conférence Académique
+Conférence Sciences humaines,Conférence Académique
+Conférence Sciences naturelles,Conférence Académique
+Conférence Technologie et ingénierie,Conférence Académique
+Conférence Affaires & Finance,Conférence
+Conférence Affaires & Finance Divers,Conférence Affaires & Finance
+Conférence d'Economie,Conférence Affaires & Finance
+Conférence sur l'Entrepreneuriat,Conférence Affaires & Finance
+Conférence Marketing,Conférence Affaires & Finance
+Conférence Culture & Société,Conférence
+Conférence Art et design,Conférence Culture & Société
+Conférence Culture & Société Divers,Conférence Culture & Société
+Conférence d'Histoire,Conférence Culture & Société
+Conférence sur la Politique,Conférence Culture & Société
+Conférence Développement Personnel,Conférence
+Conférence sur la Communication,Conférence Développement Personnel
+Conférence Développement Personnel Divers,Conférence Développement Personnel
+Conférence sur la Gestion du temps,Conférence Développement Personnel
+Conférence sur le Leadership,Conférence Développement Personnel
+Conférence Divers,Conférence
+Conférence Santé & Bien-Etre,Conférence
+Conférence Santé & Bien-Etre Divers,Conférence Santé & Bien-Etre
+Conférence de Médecine,Conférence Santé & Bien-Etre
+Conférence de Nutrition,Conférence Santé & Bien-Etre
+Conférence de  Psychologie,Conférence Santé & Bien-Etre
+Conférence Technologies de l'Information,Conférence
+Conférence sur la Cybersécurité,Conférence Technologies de l'Information
+Conférence sur le Développement logiciel,Conférence Technologies de l'Information
+Conférence Technologies de l'Information Divers,Conférence Technologies de l'Information
+Conférence sur l'Intelligence artificielle,Conférence Technologies de l'Information
+Congrès,
+Congrès Art & Culture,Congrès
+Congrès d'Arts visuels,Congrès Art & Culture
+Congrès de Cinéma,Congrès Art & Culture
+Congrès Art & Culture Divers,Congrès Art & Culture
+Congrès Littéraire,Congrès Art & Culture
+Congrès Musical,Congrès Art & Culture
+Congrès Commerce & Industrie,Congrès
+Congrès d'Agriculture,Congrès Commerce & Industrie
+Congrès de Commerce de détail,Congrès Commerce & Industrie
+Congrès de Commerce international,Congrès Commerce & Industrie
+Congrès Commerce & Industrie Divers,Congrès Commerce & Industrie
+Congrès Manufacturier,Congrès Commerce & Industrie
+Congrès Divers,Congrès
+Congrès Education & Formation,Congrès
+Congrès Développement des compétences,Congrès Education & Formation
+Congrès Education & Formation Divers,Congrès Education & Formation
+Congrès d'Éducation supérieure,Congrès Education & Formation
+Congrès de Formation professionnelle,Congrès Education & Formation
+Congrès Environnement & Durabilité,Congrès
+Congrès sur le Changement climatique,Congrès Environnement & Durabilité
+Congrès Environnement & Durabilité Divers,Congrès Environnement & Durabilité
+Congrès sur les Énergies renouvelables,Congrès Environnement & Durabilité
+Congrès sur la Gestion des déchets,Congrès Environnement & Durabilité
+Congrès Médical & Scientifique,Congrès
+Congrès de Biologie,Congrès Médical & Scientifique
+Congrès de Chimie,Congrès Médical & Scientifique
+Congrès Médical & Scientifique Divers,Congrès Médical & Scientifique
+Congrès de Médecine,Congrès Médical & Scientifique
+Congrès de Physique,Congrès Médical & Scientifique
+Congrès Technologie & Innovation,Congrès
+Congrès d'Aérospatiale,Congrès Technologie & Innovation
+Congrès Technologie & Innovation Divers,Congrès Technologie & Innovation
+Congrès sur l'Énergie,Congrès Technologie & Innovation
+Congrès d'Informatique,Congrès Technologie & Innovation
+Congrès de Robotique,Congrès Technologie & Innovation
+Evénements Divers,
+Emploi,
+Emploi Divers,Emploi
+Emploi Etudiant,Emploi
+Emploi Etudiant Divers,Emploi Etudiant
+Opportunités de bénévolat,Emploi Etudiant
+Programmes de travail-étude,Emploi Etudiant
+Stages,Emploi Etudiant
+Emploi & Technologie,Emploi
+Ateliers de programmation,Emploi & Technologie
+Emploi & Technologie Divers,Emploi & Technologie
+Foires technologiques,Emploi & Technologie
+Meetups technologiques,Emploi & Technologie
+Formation Professionnelle,Emploi
+Cours de langues,Formation Professionnelle
+Formation Professionnelle Divers,Formation Professionnelle
+Formations en gestion,Formation Professionnelle
+Formations en informatique,Formation Professionnelle
+Formations techniques,Formation Professionnelle
+Networking & Développement Professionnel,Emploi
+Conférences professionnelles,Networking & Développement Professionnel
+Networking & Développement Professionnel Divers,Networking & Développement Professionnel
+Événements de réseautage,Networking & Développement Professionnel
+Groupes de discussion,Networking & Développement Professionnel
+Orientation Professionnelle,Emploi
+Conseil en orientation,Orientation Professionnelle
+Orientation Professionnelle Divers,Orientation Professionnelle
+Évaluations de compétences,Orientation Professionnelle
+Séminaires de carrière,Orientation Professionnelle
+Recherche d'Emploi,Emploi
+Ateliers de rédaction de CV,Recherche d'Emploi
+Coaching d'entretien,Recherche d'Emploi
+Recherche d'Emploi Divers,Recherche d'Emploi
+Salons de l'emploi,Recherche d'Emploi
+Exposition,
+Exposition Archéologie & Histoire,Exposition
+Exposition Archéologie & Histoire Divers,Exposition Archéologie & Histoire
+Expositions historiques,Exposition Archéologie & Histoire
+Exposition sur Site archéologique,Exposition Archéologie & Histoire
+Exposition Art & Culture,Exposition
+Exposition d'Art contemporain,Exposition Art & Culture
+Exposition Art & Culture Divers,Exposition Art & Culture
+Exposition de Peinture,Exposition Art & Culture
+Exposition de Photographie,Exposition Art & Culture
+Exposition de Sculpture,Exposition Art & Culture
+Exposition Divers,Exposition
+Exposition Environnement & Nature,Exposition
+Exposition Environnement & Nature Divers,Exposition Environnement & Nature
+Exposition sur l'Écologie,Exposition Environnement & Nature
+Exposition sur la Faune et la flore,Exposition Environnement & Nature
+Exposition de Jardin botanique,Exposition Environnement & Nature
+Exposition Sciences & Technologies,Exposition
+Exposition d'Astronomie,Exposition Sciences & Technologies
+Exposition Sciences & Technologies Divers,Exposition Sciences & Technologies
+Exposition d'Innovations technologiques,Exposition Sciences & Technologies
+Exposition de Sciences naturelles,Exposition Sciences & Technologies
+Exposition Thématique,Exposition
+Exposition Thématique Divers,Exposition Thématique
+Expositions interactives,Exposition Thématique
+Expositions éducatives,Exposition Thématique
+Expositions pour enfants,Exposition Thématique
+Festival,
+Festival Artistique,Festival
+Festival Artistique Divers,Festival Artistique
+Festival Artistique de la rue,Festival Artistique
+Festival Artistique visuels,Festival Artistique
+Festival Installation Artistique,Festival Artistique
+Festival de Peinture,Festival Artistique
+Performances,Festival Artistique
+Festival de Sculpture,Festival Artistique
+Festival Cinéma,Festival
+Cinema d'Animation,Festival Cinéma
+Comédie (cinéma),Festival Cinéma
+Festival Cinéma Divers,Festival Cinéma
+Film Documentaire,Festival Cinéma
+Drame (cinéma),Festival Cinéma
+Film d'Horreur,Festival Cinéma
+Film Science-Fiction,Festival Cinéma
+Festival Culture & Histoire,Festival
+Festival d'Artisanat,Festival Culture & Histoire
+Festival Culture & Histoire Divers,Festival Culture & Histoire
+Festival Folklorique,Festival Culture & Histoire
+Festival d'Histoire locale,Festival Culture & Histoire
+Festival Traditionnel,Festival Culture & Histoire
+Festival Divers,Festival
+Festival Environnement & Nature,Festival
+Festival Biodiversité,Festival Environnement & Nature
+Festival Développement durable,Festival Environnement & Nature
+Festival Environnement & Nature Divers,Festival Environnement & Nature
+Festival d'observation de la nature,Festival Environnement & Nature
+Festival Gastronomique,Festival
+Festival de Cuisine locale,Festival Gastronomique
+Festival de Cuisine du monde,Festival Gastronomique
+Festival de Dégustation de vins,Festival Gastronomique
+Festival Gastronomique Divers,Festival Gastronomique
+Festival de Street food,Festival Gastronomique
+Festival Innovation & Technologie,Festival
+Festival Innovation & Technologie Divers,Festival Innovation & Technologie
+Festival Intelligence Artificielle,Festival Innovation & Technologie
+Festival de Robotique,Festival Innovation & Technologie
+Festival pour Start-ups,Festival Innovation & Technologie
+Festival Tech verte,Festival Innovation & Technologie
+Festival Littéraire,Festival
+Festival de Bande dessinée,Festival Littéraire
+Festival Littéraire Divers,Festival Littéraire
+Festival essais littéraires,Festival Littéraire
+Festival d'Histoire,Festival Littéraire
+Festival de Poésie,Festival Littéraire
+Festival du Roman,Festival Littéraire
+Festival Musique,Festival
+Festival de Musique Classique,Festival Musique
+Festival Musique Divers,Festival Musique
+Festival de Musique Électronique,Festival Musique
+Festival de Musique Folk,Festival Musique
+Festival de Hip-Hop,Festival Musique
+Festival de Jazz,Festival Musique
+Festival de Rock,Festival Musique
+Fête,
+Carnaval,Fête
+Cérémonie,Fête
+Fête Divers,Fête
+Fête Nationale,Fête
+Fête Religieuse,Fête
+Gala,Fête
+Réception,Fête
+Soirée Etudiante,Fête
+Soirée Thématique,Fête
+Inauguration,
+Inauguration Divers,Inauguration
+Kermesse,
+Kermesse Divers,Kermesse
+Loto,
+Loto Divers,Loto
+Marché,
+Marché Divers,Marché
+Marché de Noël,Marché
+Rencontre,
+Rencontre Amoureuse,Rencontre
+Rencontre Amoureuse Divers,Rencontre Amoureuse
+Rendez-vous arrangé,Rencontre Amoureuse
+Speed dating,Rencontre Amoureuse
+Rencontre Culturelle,Rencontre
+Rencontre Culturelle Divers,Rencontre Culturelle
+Lecture de groupe,Rencontre Culturelle
+Projection de film,Rencontre Culturelle
+Visite de musée,Rencontre Culturelle
+Rencontre Divers,Rencontre
+Rencontre Sociale,Rencontre
+Café rencontre,Rencontre Sociale
+Rencontre Club / Association,Rencontre Sociale
+Rencontre Sociale Divers,Rencontre Sociale
+Dîner de groupe,Rencontre Sociale
+Rencontre Sportive,Rencontre
+Rencontre Sportive Divers,Rencontre Sportive
+Entraînement ouvert,Rencontre Sportive
+Match,Rencontre Sportive
+Randonnée,Rencontre Sportive
+Tournoi,Rencontre Sportive
+Salon,
+Salon Divers,Salon
+Salon Loisirs,Salon
+Salon Loisirs Divers,Salon Loisirs
+Salon des jeux vidéo,Salon Loisirs
+Salon du modélisme,Salon Loisirs
+Salon de la bande dessinée,Salon Loisirs
+Salon Professionnel,Salon
+Salon Professionnel Divers,Salon Professionnel
+Salon de l'automobile,Salon Professionnel
+Salon de la technologie,Salon Professionnel
+Salon de l'industrie,Salon Professionnel
+Salon de l'artisanat,Salon Professionnel
+Salon de la mode,Salon Professionnel
+Salon de la beauté,Salon Professionnel
+Salon du livre,Salon Professionnel
+Salon de la gastronomie,Salon Professionnel
+Salon du tourisme,Salon Professionnel
+Salon de l'éducation,Salon Professionnel
+Salon de la santé,Salon Professionnel
+Salon du bien-être,Salon Professionnel
+Salon de l'immobilier,Salon Professionnel
+Salon du jardinage,Salon Professionnel
+Spectacle,
+Représentation de Ballet,Spectacle
+Spectacle de Cabaret,Spectacle
+Spactacle de Cirque,Spectacle
+Spectacle de Comédie Musicale,Spectacle
+Spectacle Divers,Spectacle
+Feu d’Artifice,Spectacle
+Spectacle d'Humour,Spectacle
+Spectacle de Magie,Spectacle
+Représentation d'Opéra,Spectacle
+Projection Cinématographique,Spectacle
+Show Télévisé,Spectacle
+Spectacle Aérien,Spectacle
+Spectacle De Rue,Spectacle
+Sport (hors compétition ou tournoi),
+Divers,Sport (hors compétition ou tournoi)
+Stage,
+Stage Artistique,Stage
+Stage Artistique Divers,Stage Artistique
+Stage de danse,Stage Artistique
+Stage de musique,Stage Artistique
+Stage de théâtre,Stage Artistique
+Stage de peinture,Stage Artistique
+Stage de Développement Personnel,Stage
+Coaching individuel,Stage de Développement Personnel
+Stage de Développement Personnel Divers,Stage de Développement Personnel
+Séminaire de motivation,Stage de Développement Personnel
+Stage de bien-être,Stage de Développement Personnel
+Stage Divers,Stage
+Stage Professionnel,Stage
+Atelier de travail,Stage Professionnel
+Stage Professionnel Divers,Stage Professionnel
+Séminaire spécialisé,Stage Professionnel
+Stage Formation continue,Stage Professionnel
+Stage Sportif,Stage
+Camp d’entraînement,Stage Sportif
+Clinique de sport,Stage Sportif
+Stage Sportif Divers,Stage Sportif
+Stage de fitness,Stage Sportif
+Stage de yoga,Stage Sportif
+Théâtre,
+Comédie (Théâtre),Théâtre
+Théâtre Divers,Théâtre
+Drame (Théâtre),Théâtre
+Théâtre d'Improvisation,Théâtre
+Lecture Dramatique,Théâtre
+One-man Show,Théâtre
+Théâtre Classique,Théâtre
+Théâtre Contemporain,Théâtre
+Théâtre De Rue,Théâtre
+Théâtre Expérimental,Théâtre
+Tragédie (Théâtre),Théâtre
+Vaudeville (Théâtre),Théâtre
+Tournoi,
+Tournoi Divers,Tournoi
+Tournoi d'Échecs,Tournoi
+Tournoi de Jeux de Cartes,Tournoi
+Tournoi de Bridge,Tournoi de Jeux de Cartes
+Tournoi de Poker,Tournoi de Jeux de Cartes
+Tournoi de Jeux de Société,Tournoi
+Tournoi de Monopoly,Tournoi de Jeux de Société
+Tournoi de Risk,Tournoi de Jeux de Société
+Tournoi Sportif,Tournoi
+Tournoi de Badminton,Tournoi Sportif
+Tournoi de Basketball,Tournoi Sportif
+Tournoi de Esports,Tournoi Sportif
+Tournoi de Football,Tournoi Sportif
+Tournoi de Golf,Tournoi Sportif
+Tournoi de Ping-pong,Tournoi Sportif
+Tournoi de Rugby,Tournoi Sportif
+Tournoi de Tennis,Tournoi Sportif
+Tournoi de Volleyball,Tournoi Sportif
